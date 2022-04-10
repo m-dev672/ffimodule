@@ -12,7 +12,7 @@ static PyMethodDef methods[] = {
     {NULL}
 };
 
-static struct PyModuleDef modules = {
+static struct PyModuleDef module = {
     PyModuleDef_HEAD_INIT,
     "",
     "",
@@ -21,5 +21,5 @@ static struct PyModuleDef modules = {
 };
 
 PyMODINIT_FUNC PyInit_helloworld() {
-    return PyModule_Create(&modules);
+    return PyModule_Create(&module);
 }
